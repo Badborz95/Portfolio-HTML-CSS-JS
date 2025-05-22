@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turpal Portfolio</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> <a href="index.html">Turpal Djabrailov</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projet">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Turpal Djabrailov</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projet" onclick="toggleMenu()">Projets</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profil-pic.png" alt="Turpal Djabrailov photo de profil" class="profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Salut, Je suis</p>
+            <h1 class="title"> Turpal Djabrailov</h1>
+            <p class="section__text__p2"> Developpeur Web</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/Turpal-CV.pdf')">
+                Telecharger mon CV
+                </button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                Info Contact
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Mon compte linkedin" class="icon" onclick="window.open('https://www.linkedin.com/in/djabrailovturpal/', '_blank')">
+                <img src="./assets/github.png" alt="Mon compte Github" class="icon" onclick="window.open('https://github.com/Badborz95', '_blank')">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Savoir plus</p>
+        <h1 class="title">A propos de moi</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Image de moi pour la section A propos" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="icone experience" class="icon">
+                        <h3>Experience</h3>
+                        <p>1 an <br> Developpement web</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="icone education" class="icon">
+                        <h3>Education</h3>
+                        <p>2025 - 2026 <br> Concepteur Developpeur d'Applications</p>
+                        <p>2021 - 2024 <br> BTS SIO option SLAM</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Je suis un jeune développeur web passionné par la programmation. Mon objectif est de devenir un développeur autonome, capable de concevoir et réaliser des projets complets. Actuellement, je suis à la recherche d'une <b>Alternance</b> pour préparer une licence Concepteur Développeur d'Applications.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Fleche de bas" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Partager mon</p>
+        <h1 class="title">Expérience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Developpement Frontend</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icone check" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Expérimenté</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icone check" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Avancé</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icone check" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Debutant</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icone check" class="icon">
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Debutant</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icone check" class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Bases</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icone check" class="icon">
+                            <div>
+                                <h3>UI/UX</h3>
+                                <p>Debutant</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Developpement Backend</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icone check" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediare</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icone check" class="icon">
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Debutant</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icone check" class="icon">
+                            <div>
+                                <h3>Symfony</h3>
+                                <p>Debutant</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icone check" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediare</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Icone check" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Intermediare</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Fleche de bas" class="icon arrow" onclick="location.href='./#projet'">
+    </section>
+    <section id="projet">
+        <p class="section__text__p1">Découvrir mes</p>
+        <h1 class="title">Projets Recents</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Project-1.png" alt="Image du projet 1" class="project-img">
+                </div>
+                <div class="article-assets">
+                    <h2 class="experience-sub-title project-title">Projet Un</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Badborz95/HubertWish', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Badborz95/HubertWish', '_blank')">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Image du projet 2" class="project-img">
+                </div>
+                <div class="article-assets">
+                    <h2 class="experience-sub-title project-title">Projet Deux</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Badborz95/Site-presse', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Badborz95/Site-presse', '_blank')">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Image du projet 3" class="project-img">
+                </div>
+                <div class="article-assets">
+                    <h2 class="experience-sub-title project-title">Projet Trois</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Badborz95/Gemustore', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Badborz95/Gemustore', '_blank')">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Fleche de bas" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Communiquer</p>
+        <h1 class="title">Avec Moi</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Icone email" class="icon contact-icon email-icon">
+                <p><a href="mailto:turpal.ali.djabrailov@gmail.com">Turpal.ali.djabrailov@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="icone Linkedin" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/djabrailovturpal/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Fleche de retour en haut" class="icon arrow-up" onclick="location.href='./#desktop-nav'">
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projet">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Turpal Djabrailov. Tous droits réservés</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
